@@ -1,9 +1,11 @@
 import random
 
 def guess_num():
+
     to_be_guessed = random.randint(1, 100)
-    print(to_be_guessed)
+
     while True:
+
         try:
             player_input = int(input("Guess my number (1-100): "))
             if player_input == to_be_guessed:
@@ -15,11 +17,14 @@ def guess_num():
                 print("Lower")
             else:
                 print(f"{player_input} isn't a number between 1 and 100")
+
         except ValueError:
             print("Only integers allowed")
 
 guess_num()
+
 while True:
+
     try:
         continue_game = input("Would you like to continue? (Y/N)")
         if continue_game=="Y":
@@ -31,5 +36,6 @@ while True:
             print(f"{continue_game} isn't even an alphabetic character")
         else:
             print("Only Y or N as a valid answer")
+
     except ValueError:
-        print("We got a value error")
+        print("There's a.. value error?")
