@@ -38,4 +38,4 @@ while True:
             print("Only Y or N as a valid answer")
 
     except ValueError:
-        print("There's a.. value error?")
+        print("Got a ValueError")
