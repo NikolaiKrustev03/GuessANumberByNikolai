@@ -26,7 +26,7 @@ guess_num()
 while True:
 
     try:
-        continue_game = input("Would you like to continue? (Y/N)")
+        continue_game = input("Would you like to continue? (Y/N)\n")
         if continue_game=="Y":
             guess_num()
         elif continue_game=="N":
@@ -38,4 +38,4 @@ while True:
             print("Only Y or N as a valid answer")
 
     except ValueError:
-        print("Got a ValueError")
+        print("Invalid answer")
