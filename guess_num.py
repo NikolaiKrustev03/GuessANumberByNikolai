@@ -26,10 +26,10 @@ guess_num()
 while True:
 
     try:
-        continue_game = input("Would you like to continue? (Y/N)\n")
-        if continue_game=="Y":
+        continue_game = input("Would you like to continue? (Y/N)\n").upper()
+        if continue_game == "Y":
             guess_num()
-        elif continue_game=="N":
+        elif continue_game == "N":
             print("Maybe you'd like to check out my other projects on https://github.com/NikolaiKrustev03")
             break
         elif not continue_game.isalpha():
@@ -37,5 +37,5 @@ while True:
         else:
             print("Only Y or N as a valid answer")
 
-    except ValueError:
+    except:
         print("Invalid answer")
